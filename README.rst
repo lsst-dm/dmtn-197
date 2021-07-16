@@ -10,7 +10,8 @@ Streak Masking in DM Image Processing
 DMTN-197
 ========
 
-There are many streaks in HSC data, and there will be many streaks in Rubin Observatory data. We want to mask them out of images.
+Streaks caused by satellites are a persistent problem in optical images, and their occurrence will likely increase in the coming years. Many Hyper Suprime-Cam images are already affected by streaks, and the same is expected for Rubin Observatory data. In the LSST Data Release Production (DRP), most streaks and other artifacts are already detected and masked by the algorithm {{CompareWarpAssembleCoadd}}. However, some streaks are not caught at this stage and can contaminate the final coadds and detection catalogs. To find and mask these, we adopt a morphologically-based method for detecting streaks, which uses the Kernel-Based Hough Transform to detect straight lines. Once the lines are detected, the streak profile is fit and the affected portion of the image is masked out. This algorithm, {{maskStreaks}}, is included in the {{pipe_tasks}} package and is used in {{CompareWarpAssembleCoadd}} to remove streaks from coadds. Similar implementation in the Alert Production is possible but has not been implemented.
+
 
 Links
 =====
