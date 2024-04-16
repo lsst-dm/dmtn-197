@@ -32,7 +32,7 @@ Clare Saunders
 % \setDocCurator{The Curator of this Document}
 
 \setDocAbstract{
-Streaks caused by satellites are a persistent problem in optical images, and their occurrence will likely increase in the coming years. Many Hyper Suprime-Cam images are already affected by streaks, and the same is expected for Rubin Observatory data. In the LSST Data Release Production (DRP), most streaks and other artifacts are already detected and masked by the algorithm \texttt{CompareWarpAssembleCoadd}. However, some streaks are not caught at this stage and can contaminate the final coadds and detection catalogs. To find and mask these, we adopt a morphologically-based method for detecting streaks, which uses the Kernel-Based Hough Transform to detect straight lines. Once the lines are detected, the streak profile is fit and the affected portion of the image is masked out. This algorithm, \texttt{maskStreaks}, is included in the \texttt{pipe\_tasks} package and is used in \texttt{CompareWarpAssembleCoadd} to remove streaks from coadds. Similar implementation in the Alert Production Pipeline is possible but has not been implemented.}
+Streaks caused by satellites are a persistent problem in optical images, and their occurrence will likely increase in the coming years. Many Hyper Suprime-Cam images are already affected by streaks, and the same is expected for Rubin Observatory data. In the LSST Data Release Production (DRP), most streaks and other artifacts are already detected and masked by the algorithm \texttt{CompareWarpAssembleCoadd}. However, some streaks are not caught at this stage and can contaminate the final coadds and detection catalogs. To find and mask these, we adopt a morphologically-based method for detecting streaks, which uses the Kernel-Based Hough Transform to detect straight lines. Once the lines are detected, the streak profile is fit and the affected portion of the image is masked out. This algorithm, \texttt{maskStreaks}, is included in the \texttt{meas\_algorithms} package and is used in \texttt{CompareWarpAssembleCoadd} to remove streaks from coadds. Similar implementation in the Alert Production Pipeline is possible but has not been implemented.}
 
 % Change history defined here.
 % Order: oldest first.
@@ -41,6 +41,7 @@ Streaks caused by satellites are a persistent problem in optical images, and the
 \setDocChangeRecord{%
   \addtohist{1}{2021-07-15}{Version 1.0}{Clare Saunders}
   \addtohist{1}{2021-12-09}{Version 1.1}{Clare Saunders}
+  \addtohist{1}{2024-03-13}{Version 1.2, Update of task repository}{Clare Saunders}
 }
 
 
