@@ -85,30 +85,30 @@ In practice, some preprocessing of astronomical images helps KHT work smoothly. 
 \begin{figure}
 \centering
 \begin{subfigure}[t]{0.32\columnwidth}
-\includegraphics[width=0.32\columnwidth]{figures/HSC-R_visit23694_patch3,1_orig.png}
+\includegraphics[width=\columnwidth]{figures/HSC-R_visit23694_patch3,1_orig.png}
 \subcaption{}
 \end{subfigure}
 \qquad
 \begin{subfigure}[t]{0.32\columnwidth}
-\includegraphics[width=0.32\columnwidth]{figures/HSC-R_visit23694_patch3,1_binary.png}
+\includegraphics[width=\columnwidth]{figures/HSC-R_visit23694_patch3,1_binary.png}
 \subcaption{}
 \end{subfigure} \\
 \begin{subfigure}[t]{0.32\columnwidth}
-\includegraphics[width=0.32\columnwidth]{figures/HSC-R_visit23694_patch3,1_canny.png}
+\includegraphics[width=\columnwidth]{figures/HSC-R_visit23694_patch3,1_canny.png}
 \subcaption{}
 \end{subfigure}
 \qquad
 \begin{subfigure}[t]{0.32\columnwidth}
-\includegraphics[width=0.32\columnwidth]{figures/HSC-R_visit23694_patch3,1_bestLines.png}
+\includegraphics[width=\columnwidth]{figures/HSC-R_visit23694_patch3,1_bestLines.png}
 \subcaption{}
 \end{subfigure} \\
 \begin{subfigure}[t]{0.32\columnwidth}
-\includegraphics[width=0.32\columnwidth]{figures/HSC-R_visit23694_patch3,1_streakMask.png}
+\includegraphics[width=\columnwidth]{figures/HSC-R_visit23694_patch3,1_streakMask.png}
 \subcaption{}
 \end{subfigure}
 \qquad
 \begin{subfigure}[t]{0.32\columnwidth}
-\includegraphics[width=0.32\columnwidth]{figures/HSC-R_visit23694_patch3,1_origMasked.png}
+\includegraphics[width=\columnwidth]{figures/HSC-R_visit23694_patch3,1_origMasked.png}
 \subcaption{}
 \end{subfigure}  \\
 \caption{Demonstration of the streak masking: (a) shows the original image, which is a warped difference image created from subtracting a clipped \texttt{deepCoadd} from a \texttt{deepCoadd\_directWarp}; (b) shows the mask of detected pixels in the image; (c) shows the result of using a Canny edge detector; (d) shows the lines detected by KHT in blue, with the line corresponding to the average position of the KHT lines is in red; (e) shows the mask fit to the detected streak; (f) shows the final image with the streak masked out.}
